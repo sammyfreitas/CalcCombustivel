@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Abastecimento</title>
+    <!-- LINK PARA DOWNLOAD DE OPÇÕES DE ICONES PARA A PARTE SUPERIOR DA PAGINA: https://www.flaticon.com/free-icons/ -->
+	<link rel="icon" href="./imagens/icone.png" type="image/x-icon">
+	<!-- LINK PARA O CSS DA SUA PAGINA -->
+	<link rel="stylesheet" href="./css/styles.css">
+	
+	<!-- LINK PARA OS BOTOES DAS REDES SOCIAIS USADOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+	<div class="outer-container">
+        <div class="social-icons">
+            <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.twitter.com/tonyfreitas/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.discord.com/tonyfreitas/" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+		<div class="form-container">
+			<div class="input-container">
+			<h2>Cálculo Abastecimento</h2>
+				<hr>
+				<label for='capacidadeTanque'>Capacidade do Tanque (em litros):</label><br>
+				<input type='number' id='capacidadeTanque' placeholder="Digite a capacidade do tanque do veículo"</input><br>
+				
+				<label for='consumoMedio'>Consumo Médio (km/l):</label><br>
+				<input type='number' id='consumoMedio' placeholder="Digite o consumo médio por km em litros"</input><br>
+			
+				<label for='distancia'>Distância (km):</label><br>
+				<input type='number' id='distancia' placeholder="Digite a distância que será percorrida"</input><br>
+				<hr>
+				<button onclick="calculaAbastecimento()">Calcular</button>
+			
+			</div>
+			
+			<div class="info-container">
+				<div id='resultado'> </div>
+			</div>
+		</div>
+		
+	</div>
+
+	
+	
+		
+	<script src="./js/script.js"></script>
+    	
+</body>
+
+<footer>
+	<div class="rodape-container">
+		Desenvolvido por <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank">Anthony Freitas</a> no Curso de Programador Front-End no Senai Maracanã<br>Todos os direitos reservados - 2023
+	</div>
+</footer>
+
+</html>
